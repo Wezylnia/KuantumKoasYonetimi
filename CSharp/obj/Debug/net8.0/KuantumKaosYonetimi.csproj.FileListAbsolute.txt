@@ -1,0 +1,14 @@
+C:\proje\EdaOdev\CSharp\bin\Debug\net8.0\KuantumKaosYonetimi.exe
+C:\proje\EdaOdev\CSharp\bin\Debug\net8.0\KuantumKaosYonetimi.deps.json
+C:\proje\EdaOdev\CSharp\bin\Debug\net8.0\KuantumKaosYonetimi.runtimeconfig.json
+C:\proje\EdaOdev\CSharp\bin\Debug\net8.0\KuantumKaosYonetimi.dll
+C:\proje\EdaOdev\CSharp\bin\Debug\net8.0\KuantumKaosYonetimi.pdb
+C:\proje\EdaOdev\CSharp\obj\Debug\net8.0\KuantumKaosYonetimi.GeneratedMSBuildEditorConfig.editorconfig
+C:\proje\EdaOdev\CSharp\obj\Debug\net8.0\KuantumKaosYonetimi.AssemblyInfoInputs.cache
+C:\proje\EdaOdev\CSharp\obj\Debug\net8.0\KuantumKaosYonetimi.AssemblyInfo.cs
+C:\proje\EdaOdev\CSharp\obj\Debug\net8.0\KuantumKaosYonetimi.csproj.CoreCompileInputs.cache
+C:\proje\EdaOdev\CSharp\obj\Debug\net8.0\KuantumKaosYonetimi.dll
+C:\proje\EdaOdev\CSharp\obj\Debug\net8.0\refint\KuantumKaosYonetimi.dll
+C:\proje\EdaOdev\CSharp\obj\Debug\net8.0\KuantumKaosYonetimi.pdb
+C:\proje\EdaOdev\CSharp\obj\Debug\net8.0\KuantumKaosYonetimi.genruntimeconfig.cache
+C:\proje\EdaOdev\CSharp\obj\Debug\net8.0\ref\KuantumKaosYonetimi.dll

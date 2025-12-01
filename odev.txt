@@ -1,0 +1,56 @@
+Ödevinizin son teslimi 04.12.2025 Perşembe günü 15.00-17.00 arasında EZ010 no'lu laboratuvarda yapılacaktır.
+Kodlarınızı githuba yükleyiniz. Kodlar çalışır bir şekilde hazır ve hazırlıklı olarak geliniz.
+Ödevi aşağıda ki diller ile hazırlayıp (hepsi ile ayrı ayrı) getiriniz. Her bir kod ile aynı işlemleri yürüteceksiniz. Ödevi hazırlama yönteminizle ilgili kısa bir raporu sisteme yükleyiniz (1 paragraf). 
+1-)C#
+2-)Java
+3-)Python
+4-)Javascript
+Kuantum Kaos Yönetimi
+Tebrikler! "Omega Sektörü"ndeki Kuantum Veri Ambarı'nın yeni vardiya amirisiniz. Bu ambar, evrenin en kararsız ve tehlikeli maddelerini dijital ortamda saklar.
+Göreviniz basit ama stresli: Depoya gelen maddeleri kabul etmek, onları analiz etmek ve patlamadan gün sonunu getirmek. Maddelerin "Stabilite" seviyesi her geçen dakika düşmektedir. Eğer bir madde %0 stabilitenin altına düşerse, Kuantum Çöküşü (Quantum Collapse) gerçekleşir ve simülasyon biter (Game Over).
+2. TEKNİK GEREKSİNİMLER (MİMARİ)
+Projeniz aşağıdaki OOP prensiplerini eksiksiz uygulamalıdır:
+A. Temel Yapı (Abstract Class & Encapsulation)
+Tüm nesnelerin atası olan KuantumNesnesi adında soyut (abstract) bir sınıf tasarlayın.
+•	Özellikler (Properties):
+o	ID (string): Nesnenin kimliği.
+o	Stabilite (double): 0 ile 100 arasında olmalıdır. Kapsülleme (Encapsulation) kullanarak 100'den büyük veya 0'dan küçük girilmesini engelleyin.
+o	TehlikeSeviyesi (int): 1-10 arası bir sayı.
+•	Metotlar:
+o	AnalizEt(): Soyut (abstract) metot. Alt sınıflar bunu kendine göre dolduracak.
+o	DurumBilgisi(): Nesnenin ID'sini ve o anki stabilitesini string olarak döndüren metot.
+B. Arayüz (Interface Segregation)
+Her nesne tehlikeli değildir. Sadece tehlikeli olanlar için IKritik arayüzünü (interface) oluşturun.
+•	Metot: AcilDurumSogutmasi()
+o	Açıklama: Bu metot çağrıldığında nesnenin stabilitesi +50 artar (Max 100 olacak şekilde).
+C. Nesne Çeşitleri (Inheritance & Polymorphism)
+KuantumNesnesi sınıfından türeyen en az 3 somut sınıf yazın:
+1.	VeriPaketi:
+o	Sıradan, güvenli veridir. IKritik değildir.
+o	AnalizEt() çalıştığında: Stabilite sadece 5 birim düşer. Ekrana "Veri içeriği okundu." yazar.
+2.	KaranlikMadde:
+o	Tehlikelidir! IKritik arayüzünü uygular (Implement).
+o	AnalizEt() çalıştığında: Stabilite 15 birim düşer.
+o	AcilDurumSogutmasi(): Stabiliteyi yeniler.
+3.	AntiMadde (En Zorlu Olan):
+o	Çok Tehlikelidir! IKritik arayüzünü uygular.
+o	Her işlemde stabilitesi 25 birim düşer.
+o	Eğer analiz edilirse "Evrenin dokusu titriyor..." diye uyarı verir.
+D. Özel Hata Yönetimi (Custom Exception)
+Sıradan hatalar (Runtime Error) istemiyoruz.
+•	KuantumCokusuException adında bir hata sınıfı yazın.
+•	Bir nesnenin stabilitesi 0 veya altına düştüğünde sistem bu hatayı fırlatmalı, hatanın mesajında patlayan nesnenin ID'si yazmalıdır.
+3. OYNANIŞ DÖNGÜSÜ (MAIN LOOP)
+Program Main metodunda sonsuz bir döngü (while) içinde çalışmalıdır. Kullanıcıya her turda şu menü sunulmalıdır:
+KUANTUM AMBARI KONTROL PANELİ 
+1. Yeni Nesne Ekle (Rastgele Veri/Karanlık Madde/Anti Madde üretir)
+2. Tüm Envanteri Listele (Durum Raporu)
+3. Nesneyi Analiz Et (ID isteyerek)
+4. Acil Durum Soğutması Yap (Sadece IKritik olanlar için!)
+5. Çıkış
+Seçiminiz: 
+Kurallar:
+1.	Generic List: Nesneleri saklamak için List<KuantumNesnesi> kullanın.
+2.	Polimorfizm: Listeleme yaparken döngü içinde hepsinin DurumBilgisi() metodunu çağırın.
+3.	Type Checking: Kullanıcı 4. seçeneği (Soğutma) seçtiğinde, girilen ID'ye sahip nesnenin IKritik olup olmadığını (is veya as anahtar kelimesi ile) kontrol edin. Eğer sıradan bir VeriPaketi ise "Bu nesne soğutulamaz!" hatası verin.
+4.	Game Over: Eğer herhangi bir işlem sırasında KuantumCokusuException yakalanırsa (try-catch), ekrana büyük harflerle "SİSTEM ÇÖKTÜ! TAHLİYE BAŞLATILIYOR..." yazıp programı sonlandırın.
