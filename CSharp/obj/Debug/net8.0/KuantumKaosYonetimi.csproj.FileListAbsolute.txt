@@ -12,3 +12,4 @@ C:\proje\EdaOdev\CSharp\obj\Debug\net8.0\refint\KuantumKaosYonetimi.dll
 C:\proje\EdaOdev\CSharp\obj\Debug\net8.0\KuantumKaosYonetimi.pdb
 C:\proje\EdaOdev\CSharp\obj\Debug\net8.0\KuantumKaosYonetimi.genruntimeconfig.cache
 C:\proje\EdaOdev\CSharp\obj\Debug\net8.0\ref\KuantumKaosYonetimi.dll
+C:\proje\EdaOdev\CSharp\obj\Debug\net8.0\KuantumKaosYonetimi.sourcelink.json
