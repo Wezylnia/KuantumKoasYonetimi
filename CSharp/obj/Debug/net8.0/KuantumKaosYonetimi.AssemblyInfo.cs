@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KuantumKaosYonetimi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14884f794c091e047edf2eeee6fda7577f525571")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23c0108be09c53778d5da29110ddc6da24f6657a")]
 [assembly: System.Reflection.AssemblyProductAttribute("KuantumKaosYonetimi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KuantumKaosYonetimi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
